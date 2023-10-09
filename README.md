@@ -171,7 +171,7 @@ Average Riding Minutes - Weekly View:
 
 Average Riding Minutes - Hourly View:
 
-![Screenshot of the average riding minutes in a day](/Final_Screenshots/Avg_ride_length_per_day.png?raw=true "Average Riding Length in a Week")
+![Screenshot of the average riding minutes in a day](/Final_Screenshots/Avg_ride_length_hourly_per_user.png?raw=true "Average Riding Length in a Week")
 
 Average Riding Minutes - Monthly View:
 
@@ -240,17 +240,17 @@ Count of Bike Rides per User - Station View:
 
 ### Observations:
 1. Classic bikes (clocking 776,921 rides) and electric bikes (679,247 rides) were mostly preferred by casual riders, with the number of docked bikes at (124,848 occurrences).
-  i. Member bikes also prefer classic bikes (1,665,796 rides) to electric bikes (1,003,235 rides). There is no occurrence of docked bikes for member riders.
+    - Member bikes also prefer classic bikes (1,665,796 rides) to electric bikes (1,003,235 rides). There is no occurrence of docked bikes for member riders.
 2. The ride count for casual riders increases from April (108,163 rides) to August (265,748 rides) before decreasing as the colder months of the year begin.
-  i. Member riders clock in more rides as compared to casual riders, with the highest number of rides being 328,577 in August.
-  ii. This can be seen occuring over a period of April (206,758 rides) to August, which is far greater than the number of rides of casual riders.
+    - Member riders clock in more rides as compared to casual riders, with the highest number of rides being 328,577 in August.
+    - This can be seen occuring over a period of April (206,758 rides) to August, which is far greater than the number of rides of casual riders.
 3. Looking into the hourly interpretation of the count of rides for both casual and member riders, I found that:
-  i. Casual riders take more rides during the afternoon to evening hours of a day (101,429 rides at noon to 155,512 rides at 6PM). This spans over an hourly period of 6 hours.
-  ii. Member riders take more rides during the morning hours till the early hours of the night (149,515 at 7AM and 109,135 at 8PM), which could mean a full utilisation of Cyclistic bikes for the duration of their membership.
-  iii. Member riders use their bikes for nearly 13 hours a day.
+    - Casual riders take more rides during the afternoon to evening hours of a day (101,429 rides at noon to 155,512 rides at 6PM). This spans over an hourly period of 6 hours.
+    - Member riders take more rides during the morning hours till the early hours of the night (149,515 at 7AM and 109,135 at 8PM), which could mean a full utilisation of Cyclistic bikes for the duration of their membership.
+    -  Member riders use their bikes for nearly 13 hours a day.
 4. The highest number of rides in a week by casual riders is 322,425 on Saturday, while the highest number of rides being Wednesday for member riders (429,854 rides).
-  i. The number of rides by member riders remains consistently higher than casual riders.
-5. For casual riders, I notice that the busiest starting stations are Streeter Dr & Grand Ave, with 46,278 rides, and Kingsbury ST & Kinzie St 22,917 rides.
+    - The number of rides by member riders remains consistently higher than casual riders.
+6. For casual riders, I notice that the busiest starting stations are Streeter Dr & Grand Ave, with 46,278 rides, and Kingsbury ST & Kinzie St 22,917 rides.
 
 ## Share
 To share my ideas with the primary and secondary stakeholders, I created a [dashboard using Tableau](https://public.tableau.com/views/GoogleDataAnalyticsCapstone-Cyclistic_16966057338790/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) that contains the highlighted visuals for easier understanding, some of which I would also be using in my [presentation](https://docs.google.com/presentation/d/e/2PACX-1vSVViTzXi8smzDqdcoK7m4Ufmwkcfa2rsRQtLtoZSf6iDJPqWgLQtE803EIKaaWo92oPkstzlSNZDyE/pub?start=false&loop=false&delayms=3000).
