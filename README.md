@@ -39,7 +39,7 @@ The secondary stakeholders in the project are:
 ## Prepare:
 The dataset used to analyse Cyclistic's bike sharing program consist of 12 CSV files, spanning August 2022 to July 2023. Before keeping the filenames readable and consistent, I organised the files into a separate folder, labelled CSV Files under the Cyclistic_Files folder. A screenshot of the same is given below:
 
-**(Insert folder overview photo here)**
+![Screenshot of the organised data within the Cyclistic Files](/Final_Screenshots/Folder_Overview.png?raw=true "Cyclistic Folder")
 
 The available data is in wide format, and follows the ROCCC approach:
 * **Reliability:** This dataset is from the program in Chicago called Divvy, which includes complete and accurate data of the Chicago Department of Transportation (CDOT), which owns the city's bikes, stations, and vehicles.
@@ -137,7 +137,13 @@ final_file_clean_1 = final_file_clean.groupby('member_casual', as_index=False)['
 print(final_file_clean_1)
 ```
 
-**Add screenshots of data of percentage of users and the percentage of bikes output here. Add some of the graphs here too**
+Total Percentage of the Users
+
+![Screenshot of the total percent of users](/Final_Screenshots/Total_percent_users.png?raw=true "Total percent users")
+
+Total Percentage of bikes used
+
+![Screenshot of the total percentage of bikes used](/Final_Screenshots/Average_Riding_Minutes_per_Rider.png?raw=true "Total percent of bikes used")
 
 As observed above, I saw that the although the number of member riders was greater than the number of casual riders during the years 2022-2023 (Members - 62.8% and Casual Riders - 37.2%), the average time spent riding by casual riders was twice as long as that of the members, with casual riders spending an average of 22.31 minutes riding Cyclistic bikes and member riders spending half the amount, nearly 11.86 minutes.
 
@@ -159,6 +165,18 @@ final_file_clean.groupby(['member_casual', 'start_time_hour']).ride_length.mean(
 final_file_clean.groupby(['member_casual', 'start_month']).ride_length.mean()
 ```
 
+Average Riding Minutes - Weekly View:
+
+![Screenshot of the average riding minutes in a week](/Final_Screenshots/Avg_ride_length_per_day.png?raw=true "Average Riding Length in a Week")
+
+Average Riding Minutes - Hourly View:
+
+![Screenshot of the average riding minutes in a day](/Final_Screenshots/Avg_ride_length_per_day.png?raw=true "Average Riding Length in a Week")
+
+Average Riding Minutes - Monthly View:
+
+![Screenshot of the average riding minutes in a year](/Final_Screenshots/Avg_monthly_ride_length_per_user.png?raw=true "Average Riding Length in a Year")
+
 We observe the following:
 
 * A decrease in the average riding minutes of casual riders from Monday (~22.11 minutes) to Wednesday (~19 minutes)
@@ -176,8 +194,6 @@ We observe the following:
   * The highest average riding minutes during this period is July, with 25.17 minutes as riding average.
 * As for member riders, the months with the highest riding time is from May to September, with average riding times of 12.5 minutes and 12.38 minutes respectively.
   * The highest average riding minute during these months was also July, with 13.128 minutes as riding average.
-
-**Add the weekly, hourly, and monthly outputs from pycharm here**
 
 Additionally, I wanted to find the top 5 busiest stations that were starting points for casual riders for a better, more customer-centric marketing strategy. 
 
@@ -206,7 +222,21 @@ final_file_clean_6 = final_file_clean.groupby(['member_casual', 'rideable_type']
 
 Similarly, I found the number of rides of each user in the dataset based on month, hour, and the starting day of the week. I also found the number of rides from the top 5 stations mentioned above. Here are the attached screenshots and my observations.
 
-**Add the count of rides for users and counts based on weekly, hourly, and monthly outputs from pycharm here. Also add the top 5 stations**
+Count of Bike Rides per User - Monthly View:
+
+![Screenshot of the bike rides in a year](/Final_Screenshots/Monthly_bike_rides_per_user.png?raw=true "Count of Bike Rides per User in a Year")
+
+Count of Bike Rides per User - Hourly View:
+
+![Screenshot of the bike rides in a day](/Final_Screenshots/Hourly_bike_rides_per_user.png?raw=true "Count of Bike Rides per User in a Day")
+
+Count of Bike Rides per User - Daily View:
+
+![Screenshot of the bike rides in a week](/Final_Screenshots/Count_of_Daily_bike_rides_per_user.png?raw=true "Count of Bike Rides per User in a Week")
+
+Count of Bike Rides per User - Station View:
+
+![Screenshot of the bike rides in each station](/Final_Screenshots/Max_rides_per_station_per_user.png?raw=true "Count of Bike Rides per User in each station")
 
 ### Observations:
 1. Classic bikes (clocking 776,921 rides) and electric bikes (679,247 rides) were mostly preferred by casual riders, with the number of docked bikes at (124,848 occurrences).
@@ -237,3 +267,5 @@ As requested by the director, here are the following marketing strategies that I
 2. Create marketing packages that use the number of rides taken by casual riders to avail gift cards to sporting goods, converting their rides to a point-based system to obtains discounts on apparel and related gear before shifting to a two-month membership trial period.
 3. Could also push for trial memberships based on the number of rides taken by casual riders, which if availed during a promotional week, they can sign up for memberships at discounted prices.
 4. Link the number of rides taken at the top 5 busiest stations to offer further discounts on memberships. This can be done with the point-based system and the ID of the starting station, to come up with marketing strategies like "5 continuous rides at Station X will give you a discounted price on a two-month trial period of the membership".
+
+This concludes my analysis! Hope this helps!
